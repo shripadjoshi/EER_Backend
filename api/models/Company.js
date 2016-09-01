@@ -13,13 +13,37 @@ module.exports = {
             required: true,
             unique: true
         },
-        /*preferedURL: {
+        website: {
         	type: "string",
         	required: true,
         	unique: true
-        },*/
+        },
         address:{
-        	type: "text",
+            type: "text",
+            required: true
+        },
+        country:{
+            type: "string",
+            required: true
+        },
+        state:{
+            type: "string",
+            required: true
+        },
+        city:{
+            type: "string",
+            required: true
+        },
+        pincode:{
+            type: "number",
+            required: true
+        },
+        phone_no:{
+            type: "number",
+            required: true
+        },
+        mobile_no:{
+        	type: "number",
         	required: true
         },
         companyType: {
