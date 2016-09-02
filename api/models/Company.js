@@ -35,16 +35,23 @@ module.exports = {
             required: true
         },
         pincode:{
-            type: "number",
-            required: true
+            type: "float",
+            required: true,
+            numeric: true,
+            maxLength: "6",
+            minLength: "6"
         },
         phone_no:{
-            type: "number",
-            required: true
+            type: "float",
+            required: true,
+            numeric: true
         },
         mobile_no:{
-        	type: "number",
-        	required: true
+        	type: "float",
+        	required: true,
+            numeric: true,
+            maxLength: "10",
+            minLength: "10"
         },
         companyType: {
         	type: "string",
