@@ -60,12 +60,12 @@ module.exports = {
         industryType: {
         	type: "string",
         	required: true
-        }//,
+        },
 
-        // Add a reference to URL
-        /*urls: {
-            collection: 'url',
-            via: 'category'
-        }*/
+        // Add a reference to Department
+        departments: {
+            collection: 'department',
+            via: 'company_deprtments'
+        }
     }
 };
