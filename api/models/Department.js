@@ -21,7 +21,7 @@ module.exports = {
         type: "text"
     },
     // Add a reference to company
-    company_deprtments: {
+    company: {
         model: 'company',
         required: true,
     },

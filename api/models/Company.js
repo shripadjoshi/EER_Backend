@@ -65,7 +65,7 @@ module.exports = {
         // Add a reference to Department
         departments: {
             collection: 'department',
-            via: 'company_deprtments'
+            via: 'company'
         }
     }
 };
