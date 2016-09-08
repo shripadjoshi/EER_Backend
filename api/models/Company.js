@@ -66,6 +66,13 @@ module.exports = {
         departments: {
             collection: 'department',
             via: 'company'
-        }
+        },
+
+        // Add a reference to Designation
+        designations: {
+            collection: 'designation',
+            via: 'company'
+        },
+
     }
 };
