@@ -10,20 +10,23 @@ module.exports = {
   attributes: {
   	salutation:{
   		type: 'string',
-  		require: true,
+  		required: true,
   		maxLength: "10",
         minLength: "3"
   	},
   	first_name: {
         type: "string",
-        required: true
+        required: true,
+        maxLength: "20"
     },
     middle_name: {
-        type: "string"        
+        type: "string",
+        maxLength: "20"    
     },
     last_name:{
     	type: "string",
-        required: true
+        required: true,
+        maxLength: "20"
     },
     full_name:{
     	type: "text",
@@ -106,8 +109,13 @@ module.exports = {
     employee_designation:{
         model: 'designation',
         required: true
+    },
+    isDeleted:{
+    	type: "boolean",
+    	defaultsTo: "false"
     }
 
   }
+
 };
 
