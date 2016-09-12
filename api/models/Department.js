@@ -30,7 +30,14 @@ module.exports = {
     designations: {
         collection: 'designation',
         via: 'department'
+    },
+
+    // Add a reference to Employee
+    employees: {
+        collection: 'employee',
+        via: 'employee_department'
     }
+
   }
 };
 

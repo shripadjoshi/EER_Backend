@@ -74,5 +74,11 @@ module.exports = {
             via: 'company'
         },
 
+        // Add a reference to Employee
+        employees: {
+            collection: 'employee',
+            via: 'employee_company'
+        }
+
     }
 };

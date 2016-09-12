@@ -25,6 +25,12 @@ module.exports = {
     department: {
         model: 'department',
         required: true
+    },
+
+    // Add a reference to Employee
+    employees: {
+        collection: 'employee',
+        via: 'employee_designation'
     }
   }
 };
