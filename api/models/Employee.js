@@ -30,17 +30,17 @@ module.exports = {
     },
     full_name:{
     	type: "text",
-        required: true
+    	required: true
     },
     emp_id:{
     	type: "string",
-        required: true
+    	required: true
     },
     email_id:{
     	type:"string",
     	required: true,
     	unique: true,
-    	maxLength: "40",
+    	maxLength: "50",
     },
     address:{
         type: "text",
@@ -70,7 +70,7 @@ module.exports = {
     },
     phone_no:{
         type: "float",
-        required: true,
+       /* required: true,*/
         numeric: true
     },
     mobile_no:{
@@ -80,7 +80,7 @@ module.exports = {
         maxLength: "10",
         minLength: "10"
     },
-    user_name:{
+    /*user_name:{
     	type: "string",
         required: true,
         maxLength: "10",
@@ -90,8 +90,8 @@ module.exports = {
     password:{
     	type: "text",
         required: true        
-    },
-    user_type:{
+    },*/
+    employee_type:{
     	type: "string",
         required: true        
     },
@@ -111,8 +111,9 @@ module.exports = {
         required: true
     },
     isDeleted:{
-    	type: "boolean",
-    	defaultsTo: "false"
+    	type: 'boolean',
+  		defaultsTo: false,
+  		boolean: true
     }
 
   }
