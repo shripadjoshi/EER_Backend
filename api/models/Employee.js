@@ -97,18 +97,18 @@ module.exports = {
     },
     // Add a reference to company
     employee_company:{
-        model: 'company',
-        required: true
+        model: 'company'//,
+        //required: true
     },
     // Add a reference to Department
     employee_department:{
-        model: 'department',
-        required: true
+        model: 'department'//,
+        //required: true
     },
     // Add a reference to Department
     employee_designation:{
-        model: 'designation',
-        required: true
+        model: 'designation'//,
+        //required: true
     },
     isDeleted:{
     	type: 'boolean',
