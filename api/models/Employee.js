@@ -116,7 +116,67 @@ module.exports = {
   		boolean: true
     }
 
-  }
+  },
+
+  	//model validation messages definitions
+	validationMessages: { //hand for i18n & l10n
+		salutation:{
+	  		required: 'Salutation is required',
+	        minLength: 'Salutation should be atleast 3 characters',
+	        maxLength: 'Salutation should be 10 characters only'
+	  	},
+	  	first_name: {
+	        required: 'First name is required',
+		    maxLength: 'First name should be 20 characters only'
+	    },
+
+	    last_name:{
+	    	required: 'Last name is required',
+			maxLength: 'Last name should be 20 characters only'
+	    },
+	    full_name:{
+	    	required: 'Full name is required'
+	    },
+	    emp_id:{
+	    	required: 'Employee id is required',
+	    },
+	    email_id:{
+	    	required: 'Email is required',
+	        email: 'Provide valid email address',
+	        unique: 'Email address is already taken',
+	        maxLength: 'Email should be 50 characters only'
+	    },
+	    address:{
+	        required: 'Address is required'
+	    },
+	    country:{
+	        required: 'Country is required'
+	    },
+	    state:{
+	        required: 'State is required'
+	    },
+	    city:{
+	        required: 'City is required'
+	    },
+	    pincode:{
+	    	required: 'Pincode is required',
+	        numeric: 'Pincode must be numberic',
+	        maxLength: 'Pincode should be 6 characters only',
+	        minLength: 'Pincode should be 6 characters only'
+	    },
+	    phone_no:{
+	        numeric: 'Phone no must be numberic'
+	    },
+	    mobile_no:{
+	    	required: 'Mobile no is required',
+	        numeric: 'Mobile no must be numberic',
+	        maxLength: 'Mobile no should be 10 characters only',
+	        minLength: 'Mobile no should be 10 characters only'
+	    },    
+	    employee_type:{
+	    	required: 'Employee type is required'       
+	    }
+	}
 
 };
 
