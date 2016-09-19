@@ -117,7 +117,12 @@ module.exports = {
     }
 
   },
-
+  // Add a reference to Employee
+    users: {
+        collection: 'user',
+        via: 'employee'
+    },
+    
   	//model validation messages definitions
 	validationMessages: { //hand for i18n & l10n
 		salutation:{
