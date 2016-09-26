@@ -20,9 +20,9 @@ module.exports = {
         required: true
     },
     employee:{
-    	type: "float",
     	model: 'employee',
-    	required: true    
+    	required: true,
+        unique: true
     }
   }
 };

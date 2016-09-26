@@ -114,14 +114,15 @@ module.exports = {
     	type: 'boolean',
   		defaultsTo: false,
   		boolean: true
+    },
+    // Add a reference to Employee
+    user: {
+        collection: 'user',
+        via: 'employee'
     }
 
   },
-  // Add a reference to Employee
-    users: {
-        collection: 'user',
-        via: 'employee'
-    },
+  
     
   	//model validation messages definitions
 	validationMessages: { //hand for i18n & l10n
