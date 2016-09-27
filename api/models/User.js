@@ -19,6 +19,10 @@ module.exports = {
     	type: "text",
         required: true
     },
+    password_key:{
+        type: "string",
+        required: true
+    },
     employee:{
     	model: 'employee',
     	required: true,
