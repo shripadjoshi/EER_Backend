@@ -1,10 +1,10 @@
 module.exports = { 
 
 	getSelectedEmployees: function(next) {
-		var empQuery = Employee.find().populate('user', { employee: 2});
-		empQuery.exec(function(err, employees) {
-            if (err) throw err;
-            next(employees);            
-        });
+        Employee.query('SELECT full_name from Employee where Employee.id not in(select employee from USER)', 
+        	function(err, employees){
+        	if (err) throw err;
+        	next(employees);
+        })
 	}
 }
