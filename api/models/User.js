@@ -34,10 +34,20 @@ module.exports = {
         bcrypt.genSalt(10, function(err, salt) {
             bcrypt.hash(user.password, salt, function(err, hash) {
                 if (err) {
-                    console.log(err);
                     cb(err);
                 } else {
-                    console.log(hash);
+                    user.password = hash;
+                    cb();
+                }
+            });
+        });
+    },
+    beforeUpdate: function(user, cb) {
+        bcrypt.genSalt(10, function(err, salt) {
+            bcrypt.hash(user.password, salt, function(err, hash) {
+                if (err) {
+                    cb(err);
+                } else {
                     user.password = hash;
                     cb();
                 }
